@@ -3,8 +3,8 @@ package com.examples.tests;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+
+import org.openqa.selenium.edge.EdgeDriver;
 
 public class BaseTest {
 
@@ -13,11 +13,9 @@ public class BaseTest {
     @BeforeTest
     public void setUp() {
         // Set the path to the EdgeDriver executable
-        System.setProperty("webdriver.chrome.driver", "//usr/local//bin//chromedriver");
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
+        System.setProperty("webdriver.edge.driver", "/usr/local/bin/msedgedriver");
         // Create a new instance of the EdgeDriver
-        driver = new ChromeDriver();
+        driver = new EdgeDriver();
     }
 
     @AfterTest
