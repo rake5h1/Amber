@@ -14,5 +14,6 @@ public class VisitPage {
         driver.get(url);
         driver.manage().window().maximize();
         Thread.sleep(3000);
+        assert driver.getTitle().equals("Google");
     }
 }
