@@ -32,10 +32,7 @@ jobs:
       run: echo "webdriver.chrome.driver=/usr/local/bin/chromedriver" >> $GITHUB_ENV
 
     - name: Install Dependencies
-      run: mvn -B install
-
-    - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: mvn install
 
     - name: Test with Maven
       run: mvn test
