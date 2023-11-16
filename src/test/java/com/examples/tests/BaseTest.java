@@ -3,7 +3,7 @@ package com.examples.tests;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BaseTest {
 
@@ -12,9 +12,9 @@ public class BaseTest {
     @BeforeTest
     public void setUp() {
         // Set the path to the EdgeDriver executable
-        System.setProperty("webdriver.edge.driver", "//usr/local//bin//msedgedriver");
+        System.setProperty("webdriver.chrome.driver", "//usr/local//bin//chromedriver");
         // Create a new instance of the EdgeDriver
-        driver = new EdgeDriver();
+        driver = new ChromeDriver();
     }
 
     @AfterTest
