@@ -20,10 +20,13 @@ jobs:
         distribution: 'adopt'
         java-version: '11'
 
-    - name: Install Microsoft Edge WebDriver
+    - name: Download and Install ChromeDriver
       run: |
-        sudo apt-get update
-        sudo apt-get install -y microsoft-edge-dev
+        wget https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+        unzip chromedriver_linux64.zip
+        sudo mv chromedriver /usr/local/bin
+        sudo chmod +x /usr/local/bin/chromedriver
+        rm chromedriver_linux64.zip
 
     - name: Install Dependencies
       run: mvn -B install
