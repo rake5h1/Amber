@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="3.08" tests="6" errors="0" skipped="4" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="41.885" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.specification.version" value="11"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="W:\selenium_with_java\selenium\target\test-classes;W:\selenium_with_java\selenium\target\classes;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Rakesh\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Rakesh\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Rakesh\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Rakesh\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Rakesh\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Rakesh\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Rakesh\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Rakesh\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Rakesh\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Rakesh\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Rakesh\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\Rakesh\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\Rakesh\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;"/>
+    <property name="java.class.path" value="W:\selenium_with_java\selenium\target\test-classes;W:\selenium_with_java\selenium\target\classes;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Rakesh\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Rakesh\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Rakesh\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Rakesh\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Rakesh\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Rakesh\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Rakesh\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Rakesh\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Rakesh\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Rakesh\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Rakesh\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\Rakesh\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\Rakesh\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\Rakesh\.m2\repository\io\qameta\allure\allure-testng\2.13.8\allure-testng-2.13.8.jar;C:\Users\Rakesh\.m2\repository\io\qameta\allure\allure-java-commons\2.13.8\allure-java-commons-2.13.8.jar;C:\Users\Rakesh\.m2\repository\io\qameta\allure\allure-model\2.13.8\allure-model-2.13.8.jar;C:\Users\Rakesh\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Rakesh\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.11.3\jackson-databind-2.11.3.jar;C:\Users\Rakesh\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.11.3\jackson-annotations-2.11.3.jar;C:\Users\Rakesh\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.11.3\jackson-core-2.11.3.jar;C:\Users\Rakesh\.m2\repository\org\apache\tika\tika-core\1.24.1\tika-core-1.24.1.jar;C:\Users\Rakesh\.m2\repository\org\jooq\joor-java-8\0.9.13\joor-java-8-0.9.13.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -17,9 +17,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11\bin"/>
-    <property name="sun.java.command" value="C:\Users\Rakesh\AppData\Local\Temp\surefire8829198228508033484\surefirebooter3983473332317213375.jar C:\Users\Rakesh\AppData\Local\Temp\surefire8829198228508033484 2023-11-16T21-13-55_619-jvmRun1 surefire16247837016815052537tmp surefire_01624549430034258806tmp"/>
+    <property name="sun.java.command" value="C:\Users\Rakesh\AppData\Local\Temp\surefire9210302854731345988\surefirebooter3022901468650056984.jar C:\Users\Rakesh\AppData\Local\Temp\surefire9210302854731345988 2023-11-16T22-06-06_471-jvmRun1 surefire15762161680665885175tmp surefire_010361234769336166634tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="W:\selenium_with_java\selenium\target\test-classes;W:\selenium_with_java\selenium\target\classes;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Rakesh\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Rakesh\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Rakesh\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Rakesh\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Rakesh\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Rakesh\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Rakesh\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Rakesh\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Rakesh\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Rakesh\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Rakesh\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\Rakesh\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\Rakesh\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;"/>
+    <property name="surefire.test.class.path" value="W:\selenium_with_java\selenium\target\test-classes;W:\selenium_with_java\selenium\target\classes;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Rakesh\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Rakesh\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Rakesh\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Rakesh\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Rakesh\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Rakesh\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Rakesh\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Rakesh\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Rakesh\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Rakesh\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Rakesh\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Rakesh\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\Rakesh\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\Rakesh\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\Rakesh\.m2\repository\io\qameta\allure\allure-testng\2.13.8\allure-testng-2.13.8.jar;C:\Users\Rakesh\.m2\repository\io\qameta\allure\allure-java-commons\2.13.8\allure-java-commons-2.13.8.jar;C:\Users\Rakesh\.m2\repository\io\qameta\allure\allure-model\2.13.8\allure-model-2.13.8.jar;C:\Users\Rakesh\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Rakesh\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.11.3\jackson-databind-2.11.3.jar;C:\Users\Rakesh\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.11.3\jackson-annotations-2.11.3.jar;C:\Users\Rakesh\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.11.3\jackson-core-2.11.3.jar;C:\Users\Rakesh\.m2\repository\org\apache\tika\tika-core\1.24.1\tika-core-1.24.1.jar;C:\Users\Rakesh\.m2\repository\org\jooq\joor-java-8\0.9.13\joor-java-8-0.9.13.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Rakesh"/>
     <property name="user.language" value="en"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\Rakesh\AppData\Local\Temp\surefire8829198228508033484\surefirebooter3983473332317213375.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Rakesh\AppData\Local\Temp\surefire9210302854731345988\surefirebooter3022901468650056984.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.19+9-LTS-224"/>
@@ -60,92 +60,6 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="setUp" classname="com.example.SeleniumTest" time="2.479">
-    <failure message="session not created: This version of ChromeDriver only supports Chrome version 94&#10;Current browser version is 119.0.6045.159 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;RAKESH-ACER&apos;, ip: &apos;192.168.151.120&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.19&apos;&#10;Driver info: driver.version: ChromeDriver&#10;remote stacktrace: Backtrace:&#10;	Ordinal0 [0x00DFBDE3+2473443]&#10;	Ordinal0 [0x00D96661+2057825]&#10;	Ordinal0 [0x00CA2438+1057848]&#10;	Ordinal0 [0x00CC054A+1181002]&#10;	Ordinal0 [0x00CBC435+1164341]&#10;	Ordinal0 [0x00CB9CAF+1154223]&#10;	Ordinal0 [0x00CE9ADF+1350367]&#10;	Ordinal0 [0x00CE974A+1349450]&#10;	Ordinal0 [0x00CE55AB+1332651]&#10;	Ordinal0 [0x00CC2104+1188100]&#10;	Ordinal0 [0x00CC2F59+1191769]&#10;	GetHandleVerifier [0x00F82266+1549718]&#10;	GetHandleVerifier [0x0102D4A7+2250711]&#10;	GetHandleVerifier [0x00E8718B+521403]&#10;	GetHandleVerifier [0x00E86229+517465]&#10;	Ordinal0 [0x00D9B79D+2078621]&#10;	Ordinal0 [0x00D9FB58+2095960]&#10;	Ordinal0 [0x00D9FC92+2096274]&#10;	Ordinal0 [0x00DA9541+2135361]&#10;	BaseThreadInitThunk [0x76337BA9+25]&#10;	RtlInitializeExceptionChain [0x7749BD2B+107]&#10;	RtlClearBits [0x7749BCAF+191]&#10;" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
-session not created: This version of ChromeDriver only supports Chrome version 94
-Current browser version is 119.0.6045.159 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'RAKESH-ACER', ip: '192.168.151.120', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00DFBDE3+2473443]
-	Ordinal0 [0x00D96661+2057825]
-	Ordinal0 [0x00CA2438+1057848]
-	Ordinal0 [0x00CC054A+1181002]
-	Ordinal0 [0x00CBC435+1164341]
-	Ordinal0 [0x00CB9CAF+1154223]
-	Ordinal0 [0x00CE9ADF+1350367]
-	Ordinal0 [0x00CE974A+1349450]
-	Ordinal0 [0x00CE55AB+1332651]
-	Ordinal0 [0x00CC2104+1188100]
-	Ordinal0 [0x00CC2F59+1191769]
-	GetHandleVerifier [0x00F82266+1549718]
-	GetHandleVerifier [0x0102D4A7+2250711]
-	GetHandleVerifier [0x00E8718B+521403]
-	GetHandleVerifier [0x00E86229+517465]
-	Ordinal0 [0x00D9B79D+2078621]
-	Ordinal0 [0x00D9FB58+2095960]
-	Ordinal0 [0x00D9FC92+2096274]
-	Ordinal0 [0x00DA9541+2135361]
-	BaseThreadInitThunk [0x76337BA9+25]
-	RtlInitializeExceptionChain [0x7749BD2B+107]
-	RtlClearBits [0x7749BCAF+191]
-
-</failure>
-    <system-err><![CDATA[Starting ChromeDriver 94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}) on port 31837
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-]]></system-err>
-  </testcase>
-  <testcase name="testGoogleSearch" classname="com.example.SeleniumTest" time="0">
-    <skipped message="session not created: This version of ChromeDriver only supports Chrome version 94&#10;Current browser version is 119.0.6045.159 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;RAKESH-ACER&apos;, ip: &apos;192.168.151.120&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.19&apos;&#10;Driver info: driver.version: ChromeDriver&#10;remote stacktrace: Backtrace:&#10;	Ordinal0 [0x00DFBDE3+2473443]&#10;	Ordinal0 [0x00D96661+2057825]&#10;	Ordinal0 [0x00CA2438+1057848]&#10;	Ordinal0 [0x00CC054A+1181002]&#10;	Ordinal0 [0x00CBC435+1164341]&#10;	Ordinal0 [0x00CB9CAF+1154223]&#10;	Ordinal0 [0x00CE9ADF+1350367]&#10;	Ordinal0 [0x00CE974A+1349450]&#10;	Ordinal0 [0x00CE55AB+1332651]&#10;	Ordinal0 [0x00CC2104+1188100]&#10;	Ordinal0 [0x00CC2F59+1191769]&#10;	GetHandleVerifier [0x00F82266+1549718]&#10;	GetHandleVerifier [0x0102D4A7+2250711]&#10;	GetHandleVerifier [0x00E8718B+521403]&#10;	GetHandleVerifier [0x00E86229+517465]&#10;	Ordinal0 [0x00D9B79D+2078621]&#10;	Ordinal0 [0x00D9FB58+2095960]&#10;	Ordinal0 [0x00D9FC92+2096274]&#10;	Ordinal0 [0x00DA9541+2135361]&#10;	BaseThreadInitThunk [0x76337BA9+25]&#10;	RtlInitializeExceptionChain [0x7749BD2B+107]&#10;	RtlClearBits [0x7749BCAF+191]&#10;"/>
-  </testcase>
-  <testcase name="tearDown" classname="com.example.SeleniumTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="setUp" classname="com.example.SeleniumTest2" time="0.53">
-    <failure message="session not created: This version of ChromeDriver only supports Chrome version 94&#10;Current browser version is 119.0.6045.159 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;RAKESH-ACER&apos;, ip: &apos;192.168.151.120&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.19&apos;&#10;Driver info: driver.version: ChromeDriver&#10;remote stacktrace: Backtrace:&#10;	Ordinal0 [0x00DFBDE3+2473443]&#10;	Ordinal0 [0x00D96661+2057825]&#10;	Ordinal0 [0x00CA2438+1057848]&#10;	Ordinal0 [0x00CC054A+1181002]&#10;	Ordinal0 [0x00CBC435+1164341]&#10;	Ordinal0 [0x00CB9CAF+1154223]&#10;	Ordinal0 [0x00CE9ADF+1350367]&#10;	Ordinal0 [0x00CE974A+1349450]&#10;	Ordinal0 [0x00CE55AB+1332651]&#10;	Ordinal0 [0x00CC2104+1188100]&#10;	Ordinal0 [0x00CC2F59+1191769]&#10;	GetHandleVerifier [0x00F82266+1549718]&#10;	GetHandleVerifier [0x0102D4A7+2250711]&#10;	GetHandleVerifier [0x00E8718B+521403]&#10;	GetHandleVerifier [0x00E86229+517465]&#10;	Ordinal0 [0x00D9B79D+2078621]&#10;	Ordinal0 [0x00D9FB58+2095960]&#10;	Ordinal0 [0x00D9FC92+2096274]&#10;	Ordinal0 [0x00DA9541+2135361]&#10;	BaseThreadInitThunk [0x76337BA9+25]&#10;	RtlInitializeExceptionChain [0x7749BD2B+107]&#10;	RtlClearBits [0x7749BCAF+191]&#10;" type="org.openqa.selenium.SessionNotCreatedException">org.openqa.selenium.SessionNotCreatedException: 
-session not created: This version of ChromeDriver only supports Chrome version 94
-Current browser version is 119.0.6045.159 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'RAKESH-ACER', ip: '192.168.151.120', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: Backtrace:
-	Ordinal0 [0x00DFBDE3+2473443]
-	Ordinal0 [0x00D96661+2057825]
-	Ordinal0 [0x00CA2438+1057848]
-	Ordinal0 [0x00CC054A+1181002]
-	Ordinal0 [0x00CBC435+1164341]
-	Ordinal0 [0x00CB9CAF+1154223]
-	Ordinal0 [0x00CE9ADF+1350367]
-	Ordinal0 [0x00CE974A+1349450]
-	Ordinal0 [0x00CE55AB+1332651]
-	Ordinal0 [0x00CC2104+1188100]
-	Ordinal0 [0x00CC2F59+1191769]
-	GetHandleVerifier [0x00F82266+1549718]
-	GetHandleVerifier [0x0102D4A7+2250711]
-	GetHandleVerifier [0x00E8718B+521403]
-	GetHandleVerifier [0x00E86229+517465]
-	Ordinal0 [0x00D9B79D+2078621]
-	Ordinal0 [0x00D9FB58+2095960]
-	Ordinal0 [0x00D9FC92+2096274]
-	Ordinal0 [0x00DA9541+2135361]
-	BaseThreadInitThunk [0x76337BA9+25]
-	RtlInitializeExceptionChain [0x7749BD2B+107]
-	RtlClearBits [0x7749BCAF+191]
-
-</failure>
-    <system-err><![CDATA[Starting ChromeDriver 94.0.4606.61 (418b78f5838ed0b1c69bb4e51ea0252171854915-refs/branch-heads/4606@{#1204}) on port 39059
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-]]></system-err>
-  </testcase>
-  <testcase name="testGoogleSearch2" classname="com.example.SeleniumTest2" time="0">
-    <skipped message="session not created: This version of ChromeDriver only supports Chrome version 94&#10;Current browser version is 119.0.6045.159 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;RAKESH-ACER&apos;, ip: &apos;192.168.151.120&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.19&apos;&#10;Driver info: driver.version: ChromeDriver&#10;remote stacktrace: Backtrace:&#10;	Ordinal0 [0x00DFBDE3+2473443]&#10;	Ordinal0 [0x00D96661+2057825]&#10;	Ordinal0 [0x00CA2438+1057848]&#10;	Ordinal0 [0x00CC054A+1181002]&#10;	Ordinal0 [0x00CBC435+1164341]&#10;	Ordinal0 [0x00CB9CAF+1154223]&#10;	Ordinal0 [0x00CE9ADF+1350367]&#10;	Ordinal0 [0x00CE974A+1349450]&#10;	Ordinal0 [0x00CE55AB+1332651]&#10;	Ordinal0 [0x00CC2104+1188100]&#10;	Ordinal0 [0x00CC2F59+1191769]&#10;	GetHandleVerifier [0x00F82266+1549718]&#10;	GetHandleVerifier [0x0102D4A7+2250711]&#10;	GetHandleVerifier [0x00E8718B+521403]&#10;	GetHandleVerifier [0x00E86229+517465]&#10;	Ordinal0 [0x00D9B79D+2078621]&#10;	Ordinal0 [0x00D9FB58+2095960]&#10;	Ordinal0 [0x00D9FC92+2096274]&#10;	Ordinal0 [0x00DA9541+2135361]&#10;	BaseThreadInitThunk [0x76337BA9+25]&#10;	RtlInitializeExceptionChain [0x7749BD2B+107]&#10;	RtlClearBits [0x7749BCAF+191]&#10;"/>
-  </testcase>
-  <testcase name="tearDown" classname="com.example.SeleniumTest2" time="0">
-    <skipped/>
-  </testcase>
+  <testcase name="testGoogleSearch" classname="com.example.SeleniumTest" time="8.019"/>
+  <testcase name="testGoogleSearch2" classname="com.example.SeleniumTest2" time="20.365"/>
 </testsuite>
