@@ -1,4 +1,68 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 44.949 s - in TestSuite
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 4, Time elapsed: 3.08 s <<< FAILURE! - in TestSuite
+setUp(com.example.SeleniumTest)  Time elapsed: 2.479 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+session not created: This version of ChromeDriver only supports Chrome version 94
+Current browser version is 119.0.6045.159 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'RAKESH-ACER', ip: '192.168.151.120', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00DFBDE3+2473443]
+	Ordinal0 [0x00D96661+2057825]
+	Ordinal0 [0x00CA2438+1057848]
+	Ordinal0 [0x00CC054A+1181002]
+	Ordinal0 [0x00CBC435+1164341]
+	Ordinal0 [0x00CB9CAF+1154223]
+	Ordinal0 [0x00CE9ADF+1350367]
+	Ordinal0 [0x00CE974A+1349450]
+	Ordinal0 [0x00CE55AB+1332651]
+	Ordinal0 [0x00CC2104+1188100]
+	Ordinal0 [0x00CC2F59+1191769]
+	GetHandleVerifier [0x00F82266+1549718]
+	GetHandleVerifier [0x0102D4A7+2250711]
+	GetHandleVerifier [0x00E8718B+521403]
+	GetHandleVerifier [0x00E86229+517465]
+	Ordinal0 [0x00D9B79D+2078621]
+	Ordinal0 [0x00D9FB58+2095960]
+	Ordinal0 [0x00D9FC92+2096274]
+	Ordinal0 [0x00DA9541+2135361]
+	BaseThreadInitThunk [0x76337BA9+25]
+	RtlInitializeExceptionChain [0x7749BD2B+107]
+	RtlClearBits [0x7749BCAF+191]
+
+
+setUp(com.example.SeleniumTest2)  Time elapsed: 0.53 s  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+session not created: This version of ChromeDriver only supports Chrome version 94
+Current browser version is 119.0.6045.159 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'RAKESH-ACER', ip: '192.168.151.120', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00DFBDE3+2473443]
+	Ordinal0 [0x00D96661+2057825]
+	Ordinal0 [0x00CA2438+1057848]
+	Ordinal0 [0x00CC054A+1181002]
+	Ordinal0 [0x00CBC435+1164341]
+	Ordinal0 [0x00CB9CAF+1154223]
+	Ordinal0 [0x00CE9ADF+1350367]
+	Ordinal0 [0x00CE974A+1349450]
+	Ordinal0 [0x00CE55AB+1332651]
+	Ordinal0 [0x00CC2104+1188100]
+	Ordinal0 [0x00CC2F59+1191769]
+	GetHandleVerifier [0x00F82266+1549718]
+	GetHandleVerifier [0x0102D4A7+2250711]
+	GetHandleVerifier [0x00E8718B+521403]
+	GetHandleVerifier [0x00E86229+517465]
+	Ordinal0 [0x00D9B79D+2078621]
+	Ordinal0 [0x00D9FB58+2095960]
+	Ordinal0 [0x00D9FC92+2096274]
+	Ordinal0 [0x00DA9541+2135361]
+	BaseThreadInitThunk [0x76337BA9+25]
+	RtlInitializeExceptionChain [0x7749BD2B+107]
+	RtlClearBits [0x7749BCAF+191]
+
+
