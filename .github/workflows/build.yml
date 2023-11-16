@@ -2,28 +2,31 @@ name: Maven Build and Test
 
 on:
   push:
-    branches: [ master ]
+    branches: [main]
   pull_request:
-    branches: [ master ]
+    branches: [main]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout code
+      uses: actions/checkout@v2
 
     - name: Set up JDK 11
       uses: actions/setup-java@v2
       with:
-        java-version: '11'
         distribution: 'adopt'
+        java-version: '11'
 
-    - name: Setup Edge WebDriver
-      uses: microsoft/edge-selenium-tools@v1
-      with:
-        edgedriver-version: 'latest'
+    - name: Install Microsoft Edge WebDriver
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y microsoft-edge-dev
+
+    - name: Install Dependencies
+      run: mvn -B install
 
     - name: Build with Maven
       run: mvn -B package --file pom.xml
