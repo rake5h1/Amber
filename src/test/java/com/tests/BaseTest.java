@@ -15,7 +15,7 @@ public class BaseTest {
         try {
             System.setProperty("webdriver.edge.driver", "/usr/local/bin/msedgedriver");
         } finally {
-            System.setProperty("webdriver.edge.driver", "src\\Resources\\msedgedriver.exe");
+            System.setProperty("webdriver.edge.driver", "src/Resources/msedgedriver.exe");
         }
 
         // Create a new instance of the EdgeDriver
