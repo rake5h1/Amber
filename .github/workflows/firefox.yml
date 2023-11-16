@@ -31,7 +31,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: test-results
-        path: extent.html
+        path: target/extent.html
 
   download-artifacts:
     runs-on: ubuntu-latest
@@ -41,4 +41,4 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: test-results
-        path: extent.html
+        path: target/extent.html
