@@ -1,27 +1,26 @@
-name: Maven Build
+name: Java Maven Build and Test
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
   pull_request:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v2
+      - name: Checkout Repository
+        uses: actions/checkout@v2
 
-    - name: Set up JDK 11
-      uses: actions/setup-java@v2
-      with:
-        distribution: 'adopt'
-        java-version: '11'
+      - name: Set up JDK 1.8
+        uses: actions/setup-java@v1
+        with:
+          java-version: 1.8
 
-    - name: Grant execute permissions to WebDriver (if needed)
-      run: chmod +x /home/runner/work/Maven/Maven/src/Resources/msedgedriver.exe
+      - name: Build with Maven
+        run: mvn install
 
-    - name: Build with Maven
-      run: mvn install
+ 
