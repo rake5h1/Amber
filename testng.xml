@@ -4,6 +4,7 @@
         <classes>
             <class name="com.example.SeleniumTest" />
             <class name="com.example.SeleniumTest2" />
+            
             <!-- Add more classes here as needed -->
         </classes>
     </test>

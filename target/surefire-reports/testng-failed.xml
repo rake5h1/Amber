@@ -6,11 +6,17 @@
       <class name="com.example.SeleniumTest2">
         <methods>
           <include name="tearDown"/>
-          <include name="beforeSuite"/>
           <include name="setUp"/>
           <include name="testGoogleSearch2"/>
         </methods>
       </class> <!-- com.example.SeleniumTest2 -->
+      <class name="com.example.SeleniumTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testGoogleSearch"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.example.SeleniumTest -->
     </classes>
   </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite1] -->
