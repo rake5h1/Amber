@@ -20,5 +20,8 @@ jobs:
         distribution: 'adopt'
         java-version: '11'
 
+    - name: Grant execute permissions to WebDriver (if needed)
+      run: chmod +x /home/runner/work/Maven/Maven/src/Resources/msedgedriver.exe
+
     - name: Build with Maven
       run: mvn install
