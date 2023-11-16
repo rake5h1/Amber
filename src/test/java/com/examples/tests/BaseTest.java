@@ -12,7 +12,7 @@ public class BaseTest {
     @BeforeTest
     public void setUp() {
         // Set the path to the EdgeDriver executable
-        //System.setProperty("webdriver.edge.driver", "src//Resources//msedgedriver.exe");
+        System.setProperty("webdriver.edge.driver", "//usr/local//bin//msedgedriver");
         // Create a new instance of the EdgeDriver
         driver = new EdgeDriver();
     }
