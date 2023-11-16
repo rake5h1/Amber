@@ -28,7 +28,7 @@ jobs:
       run: mvn -B clean test
 
     - name: Download all workflow run artifacts
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v2
       with:
         name: build-artifacts
         path: target/
