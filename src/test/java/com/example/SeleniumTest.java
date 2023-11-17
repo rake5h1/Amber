@@ -13,6 +13,4 @@ public class SeleniumTest extends BaseTest {
         homepage.navigateTo("https://google.com");
     }
 
-  
-
 }

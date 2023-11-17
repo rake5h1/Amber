@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeMethod;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-// import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 
 
 public class BaseTest {
@@ -19,17 +19,17 @@ public class BaseTest {
     @BeforeMethod
     public void setUp() {
         // Set the path to the EdgeDriver executable
-        // try {
-        //     System.setProperty("webdriver.edge.driver", "/usr/local/bin/msedgedriver");
-        // } finally {
-        //     System.setProperty("webdriver.edge.driver",
-        //             "src\\Resources\\msedgedriver.exe");
-        // }
+        try {
+            System.setProperty("webdriver.edge.driver", "/usr/local/bin/msedgedriver");
+        } finally {
+            System.setProperty("webdriver.edge.driver",
+                    "src\\Resources\\msedgedriver.exe");
+        }
 
         // Create a new instance of the EdgeDriver
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
-        driver = new ChromeDriver(options);
+        // ChromeOptions options = new ChromeOptions();
+        // options.addArguments("--headless");
+        driver = new EdgeDriver();
     }
 
     @AfterMethod
