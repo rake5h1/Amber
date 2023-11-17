@@ -28,9 +28,9 @@ public class BaseTest {
         // }
 
         // Create a new instance of the EdgeDriver
-        FirefoxOptions options = new FirefoxOptions();
+        ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
-        driver = new FirefoxDriver();
+        driver = new ChromeDriver();
     }
 
     @AfterMethod
