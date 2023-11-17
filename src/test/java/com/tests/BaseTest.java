@@ -28,7 +28,7 @@ public class BaseTest {
         // Create a new instance of the EdgeDriver
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless");
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(options);
     }
 
     @AfterMethod
