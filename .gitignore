@@ -4,3 +4,4 @@ Jenkinsfile
 chrome.yml
 allure-results
 .github
+Dockerfile
