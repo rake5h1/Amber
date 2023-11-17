@@ -3,3 +3,4 @@ Jenkinsfile
 .gitinore
 chrome.yml
 allure-results
+.github
