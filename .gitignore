@@ -2,3 +2,4 @@ Jenkinsfile
 .vscode
 .gitinore
 chrome.yml
+allure-results
