@@ -5,6 +5,8 @@ import org.testng.annotations.BeforeMethod;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
 
 public class BaseTest {
@@ -23,9 +25,9 @@ public class BaseTest {
         // }
 
         // Create a new instance of the EdgeDriver
-        ChromeOptions options = new ChromeOptions();
+        FirefoxOptions options = new FirefoxOptions();
         options.addArguments("--headless");
-        driver = new ChromeDriver(options);
+        driver = new FirefoxDriver(options);
     }
 
     @AfterMethod
