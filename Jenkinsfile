@@ -7,14 +7,7 @@ pipeline {
                 checkout scm
             }
         }
-        stage('Prepare') {
-            steps {
-                script {
-                    // Install Maven (if not already installed)
-                    tool name: 'Maven', type: 'maven'
-                }
-            }
-        }
+
         stage('Test') {
             steps {
                 script {
