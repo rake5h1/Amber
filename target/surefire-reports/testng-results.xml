@@ -2,34 +2,34 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-19T09:48:15 IST" name="Suite1" finished-at="2023-11-19T09:50:37 IST" duration-ms="141660">
+  <suite started-at="2023-11-19T11:24:57 IST" name="Suite1" finished-at="2023-11-19T11:26:14 IST" duration-ms="76894">
     <groups>
     </groups>
-    <test started-at="2023-11-19T09:48:15 IST" name="Test1" finished-at="2023-11-19T09:50:37 IST" duration-ms="141660">
+    <test started-at="2023-11-19T11:24:57 IST" name="Test1" finished-at="2023-11-19T11:26:14 IST" duration-ms="76894">
       <class name="com.example.SeleniumTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.SeleniumTest@6a03bcb1]" started-at="2023-11-19T09:48:15 IST" name="setUp" finished-at="2023-11-19T09:48:18 IST" duration-ms="2592" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.SeleniumTest@6a03bcb1]" started-at="2023-11-19T11:24:57 IST" name="setUp" finished-at="2023-11-19T11:24:58 IST" duration-ms="1484" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testGoogleSearch()[pri:0, instance:com.example.SeleniumTest@6a03bcb1]" started-at="2023-11-19T09:48:18 IST" name="testGoogleSearch" finished-at="2023-11-19T09:48:29 IST" duration-ms="10842" status="PASS">
+        <test-method signature="testGoogleSearch()[pri:0, instance:com.example.SeleniumTest@6a03bcb1]" started-at="2023-11-19T11:24:58 IST" name="testGoogleSearch" finished-at="2023-11-19T11:25:31 IST" duration-ms="32818" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGoogleSearch -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.SeleniumTest@6a03bcb1]" started-at="2023-11-19T09:48:29 IST" name="tearDown" finished-at="2023-11-19T09:48:35 IST" duration-ms="5859" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.SeleniumTest@6a03bcb1]" started-at="2023-11-19T11:25:31 IST" name="tearDown" finished-at="2023-11-19T11:25:37 IST" duration-ms="5751" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.example.SeleniumTest -->
       <class name="com.example.SeleniumTest2">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.SeleniumTest2@6c779568]" started-at="2023-11-19T09:48:35 IST" name="setUp" finished-at="2023-11-19T09:48:37 IST" duration-ms="2415" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.example.SeleniumTest2@6c779568]" started-at="2023-11-19T11:25:37 IST" name="setUp" finished-at="2023-11-19T11:25:38 IST" duration-ms="1668" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testGoogleSearch2()[pri:0, instance:com.example.SeleniumTest2@6c779568]" started-at="2023-11-19T09:48:37 IST" name="testGoogleSearch2" finished-at="2023-11-19T09:50:31 IST" duration-ms="114141" status="PASS">
+        <test-method signature="testGoogleSearch2()[pri:0, instance:com.example.SeleniumTest2@6c779568]" started-at="2023-11-19T11:25:38 IST" name="testGoogleSearch2" finished-at="2023-11-19T11:26:08 IST" duration-ms="29457" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGoogleSearch2 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.SeleniumTest2@6c779568]" started-at="2023-11-19T09:50:31 IST" name="tearDown" finished-at="2023-11-19T09:50:37 IST" duration-ms="5786" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.example.SeleniumTest2@6c779568]" started-at="2023-11-19T11:26:08 IST" name="tearDown" finished-at="2023-11-19T11:26:14 IST" duration-ms="5694" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

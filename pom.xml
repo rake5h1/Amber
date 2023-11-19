@@ -73,6 +73,8 @@
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>
+                        <!-- <suiteXmlFile>suite1.xml</suiteXmlFile>
+                        <suiteXmlFile>suite2.xml</suiteXmlFile> -->
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
