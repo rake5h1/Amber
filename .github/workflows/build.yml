@@ -27,7 +27,7 @@ jobs:
     - name: Build with Maven
       env:
         USERNAME: ${{ secrets.LAMBDA_USERNAME }}
-        ACCESS_KEY: ${{ secrets.LAMBDA_ACCESS_KEY }}
+        ACCESS_KEY: ${{ secrets.LAMBDA_ACCESSKEY }}
       run: mvn -B clean test
 
     - name: Archive artifacts
