@@ -1,5 +1,6 @@
 package com.example;
 
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import com.example.Pages.VisitPage;
 import com.tests.BaseTest;
@@ -11,6 +12,6 @@ public class SeleniumTest extends BaseTest {
         // Open Google
         VisitPage homepage = new VisitPage(driver);
         homepage.navigateTo("https://google.com");
-    }
 
+    }
 }

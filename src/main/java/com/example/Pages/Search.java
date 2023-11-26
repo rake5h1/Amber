@@ -12,11 +12,9 @@ public class Search extends VisitPage {
 
     public void search(String search) throws InterruptedException {
         navigateTo("https://google.com");
-        WebDriverWait wait = new WebDriverWait(driver, 20);
-        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("q"))).sendKeys(search);
-        Thread.sleep(3000);
-        wait.until(ExpectedConditions.elementToBeClickable(By.name("btnK"))).click();
-        Thread.sleep(3000);
+        WebDriverWait wait = new WebDriverWait(driver, 10);
 
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.name("q"))).sendKeys(search);
+        wait.until(ExpectedConditions.elementToBeClickable(By.name("btnK"))).click();
     }
 }

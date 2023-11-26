@@ -2,5 +2,5 @@
 .gitinore
 chrome.yml
 allure-results
-.github
+
 Dockerfile

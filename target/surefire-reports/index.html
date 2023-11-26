@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,6 +102,16 @@
                       <a href="#" panel-name="suite-Suite1" class="show-methods passed suite-Suite1"> (show)</a> <!-- show-methods passed suite-Suite1 -->
                     </span>
                     <div class="method-list-content passed suite-Suite1">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="com.example.SeleniumTest2" class="method navigator-link" hash-for-method="setUp(WIN10, chrome, latest)">setUp(WIN10, chrome, latest)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="com.example.SeleniumTest" class="method navigator-link" hash-for-method="setUp(WIN10, chrome, latest)">setUp(WIN10, chrome, latest)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite1" title="com.example.SeleniumTest" class="method navigator-link" hash-for-method="testGoogleSearch">testGoogleSearch</a> <!-- method navigator-link -->
@@ -127,14 +137,22 @@
           <div class="suite-Suite1-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.example.SeleniumTest</span>
+              <span class="class-name">com.example.SeleniumTest2</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testGoogleSearch">
-                  </a> <!-- testGoogleSearch -->
-                  <span class="method-name">testGoogleSearch</span>
+                  <a name="setUp(WIN10, chrome, latest)">
+                  </a> <!-- setUp(WIN10, chrome, latest) -->
+                  <span class="method-name">setUp</span>
+                  <span class="parameters">(WIN10, chrome, latest)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGoogleSearch2">
+                  </a> <!-- testGoogleSearch2 -->
+                  <span class="method-name">testGoogleSearch2</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -142,14 +160,22 @@
           <div class="suite-Suite1-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.example.SeleniumTest2</span>
+              <span class="class-name">com.example.SeleniumTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testGoogleSearch2">
-                  </a> <!-- testGoogleSearch2 -->
-                  <span class="method-name">testGoogleSearch2</span>
+                  <a name="setUp(WIN10, chrome, latest)">
+                  </a> <!-- setUp(WIN10, chrome, latest) -->
+                  <span class="method-name">setUp</span>
+                  <span class="parameters">(WIN10, chrome, latest)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGoogleSearch">
+                  </a> <!-- testGoogleSearch -->
+                  <span class="method-name">testGoogleSearch</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -163,8 +189,8 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite1&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test1&quot; verbose=&quot;0&quot;&gt;
+&lt;suite thread-count=&quot;3&quot; name=&quot;Suite1&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; name=&quot;Test1&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.example.SeleniumTest&quot;/&gt;
       &lt;class name=&quot;com.example.SeleniumTest2&quot;/&gt;
@@ -207,20 +233,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testGoogleSearch')
-data.setCell(0, 2, 'com.example.SeleniumTest')
-data.setCell(0, 3, 32818);
+data.setCell(0, 1, 'testGoogleSearch2')
+data.setCell(0, 2, 'com.example.SeleniumTest2')
+data.setCell(0, 3, 27362);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testGoogleSearch2')
-data.setCell(1, 2, 'com.example.SeleniumTest2')
-data.setCell(1, 3, 29457);
+data.setCell(1, 1, 'testGoogleSearch')
+data.setCell(1, 2, 'com.example.SeleniumTest')
+data.setCell(1, 3, 6351);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'setUp')
+data.setCell(2, 2, 'com.example.SeleniumTest')
+data.setCell(2, 3, 4081);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'setUp')
+data.setCell(3, 2, 'com.example.SeleniumTest2')
+data.setCell(3, 3, 1076);
 window.suiteTableData['Suite1']= { tableData: data, tableDiv: 'times-div-Suite1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 38 seconds</span>
               <div id="times-div-Suite1">
               </div> <!-- times-div-Suite1 -->
             </div> <!-- times-div -->
@@ -231,13 +265,33 @@ return data;
             <span class="header-content">Reporter output for Suite1</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testGoogleSearch2</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Browser Opened and navigated to https://google.com</span>
+                <span class="reporter-method-output">Browser Opened and navigated to https://google.com</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testGoogleSearch</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Browser Opened and navigated to https://google.com</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite1" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.example.SeleniumTest2</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite1" class="panel">
@@ -247,33 +301,32 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">com.example.SeleniumTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
+              <div class="test-method">
+                <span class="method-name">setUp(WIN10, chrome, latest)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
+              </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGoogleSearch</span>
-                <span class="method-start">1484 ms</span>
+                <span class="method-start">4083 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">34304 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.example.SeleniumTest2</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">40056 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">setUp(WIN10, chrome, latest)</span>
+                <span class="method-start">10435 ms</span>
+              </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGoogleSearch2</span>
-                <span class="method-start">41724 ms</span>
+                <span class="method-start">11511 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.example.SeleniumTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">71181 ms</span>
-              </div> <!-- configuration-method after -->
+                <span class="method-start">38874 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

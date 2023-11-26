@@ -1,36 +1,57 @@
 package com.tests;
 
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.Platform;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-
+import org.testng.annotations.DataProvider;
 
 public class BaseTest {
 
     protected WebDriver driver;
+    protected RemoteWebDriver remoteWebDriver;
+    String username = System.getenv("USERNAME");
+    String accesskey = System.getenv("ACCESS_KEY");
+    String gridURL = "@hub.lambdatest.com/wd/hub";
 
- 
-    @BeforeMethod
-    public void setUp() {
-        // Set the path to the EdgeDriver executable
-        // try {
-        //     System.setProperty("webdriver.edge.driver", "/usr/local/bin/msedgedriver");
-        // } finally {
-        //     System.setProperty("webdriver.edge.driver",
-        //             "src\\Resources\\msedgedriver.exe");
-        // }
+    @Test(dataProvider = "Set_Environment")
+    public void setUp(Platform platform, String browserName, String browserVersion) {
+
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability("browserName", browserName);
+        capabilities.setCapability("version", browserVersion);
+        capabilities.setCapability("platform", platform);
 
         // Create a new instance of the EdgeDriver
-        FirefoxOptions options = new FirefoxOptions();
-        options.addArguments("--headless");
-        driver = new FirefoxDriver(options);
+        // FirefoxOptions options = new FirefoxOptions();
+        // options.addArguments("--headless");
+        // driver = new FirefoxDriver(options);
+        try {
+            driver = new RemoteWebDriver(
+                    new java.net.URL("https://" + username + ":" + accesskey + gridURL), capabilities);
+        } catch (java.net.MalformedURLException e) {
+            System.out.println("Invalid grid URL");
+        }
     }
 
-    @AfterMethod
+    @DataProvider(name = "Set_Environment", parallel = true)
+    public Object[][] getData() {
+
+        Object[][] Browser_Property = new Object[][] {
+
+                { Platform.WIN10, "chrome", "latest" },
+                { Platform.WIN10, "firefox", "latest" },
+                { Platform.MAC, "safari", "latest" }
+        };
+        return Browser_Property;
+
+    }
+
+    @AfterTest
     public void tearDown() throws InterruptedException {
         // Close the browser
         if (driver != null) {
@@ -39,5 +60,4 @@ public class BaseTest {
         Thread.sleep(5000);
     }
 
-    
 }
