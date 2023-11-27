@@ -20,6 +20,6 @@ platforms:
     browserName: Edge
     browserVersion: latest
 
-parallelsPerPlatform: 1  # <integer> (Default: 1)
+parallelsPerPlatform: 3  # <integer> (Default: 1)
 
 browserstackLocal: false
