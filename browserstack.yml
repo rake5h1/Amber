@@ -1,6 +1,5 @@
 idleTimeout: 300
 capabilities:
-
   - os: Windows
     os_version: 10
     browserName: Firefox
