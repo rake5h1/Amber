@@ -20,7 +20,7 @@ public class BaseTest {
     String gridURL = "@hub.lambdatest.com/wd/hub";
     String browserstackgridurl = "@hub-cloud.browserstack.com/wd/hub";
 
-    @Test()
+    @BeforeTest()
     public void setUp() {
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -40,26 +40,25 @@ public class BaseTest {
         }
     }
 
-//     @DataProvider(name = "Set_Environment", parallel = true)
-//     public Object[][] getData() {
+    // @DataProvider(name = "Set_Environment", parallel = true)
+    // public Object[][] getData() {
 
-//     Object[][] Browser_Property = new Object[][] {
+    // Object[][] Browser_Property = new Object[][] {
 
-//    // { Platform.WIN10, "chrome", "latest" },
-//     //{ Platform.WIN10, "firefox", "latest" },
-//     { Platform.MAC, "safari", "latest" }
-//     };
-//     return Browser_Property;
+    // // { Platform.WIN10, "chrome", "latest" },
+    // //{ Platform.WIN10, "firefox", "latest" },
+    // { Platform.MAC, "safari", "latest" }
+    // };
+    // return Browser_Property;
 
-//     }
+    // }
 
     @AfterTest
     public void tearDown() throws InterruptedException {
         // Close the browser
-        if (driver != null) {
-            driver.quit();
-        }
-        
+
+        driver.quit();
+
     }
 
 }
