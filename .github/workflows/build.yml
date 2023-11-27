@@ -25,7 +25,7 @@ jobs:
     # - run: chrome --version
 
     - name: Copy browserstack.yml
-      run: cp .github/browserstack.yml .
+      run: cp browserstack.yml .
      
     - name: Build with Maven
       env:
