@@ -19,7 +19,7 @@ public class BaseTest {
     String gridURL = "@hub.lambdatest.com/wd/hub";
     String browserstackgridurl = "@hub-cloud.browserstack.com/wd/hub";
 
-    @BeforeMethod()
+    @BeforeTest()
     public void setUp() {
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -39,7 +39,7 @@ public class BaseTest {
         }
     }
 
-    @AfterMethod()
+    @AfterTest()
     public void tearDown() throws InterruptedException {
         // Close the browser
         if (driver != null) {
