@@ -1,6 +1,7 @@
 package com.tests;
 
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.Platform;
@@ -19,13 +20,13 @@ public class BaseTest {
     String gridURL = "@hub.lambdatest.com/wd/hub";
     String browserstackgridurl = "@hub-cloud.browserstack.com/wd/hub";
 
-    @Test()
-    public void setUp() {
+    @Test(dataProvider = "Set_Environment")
+    public void setUp(Platform platform, String browserName, String browserVersion) {
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        // capabilities.setCapability("browserName", browserName);
-        // capabilities.setCapability("version", browserVersion);
-        // capabilities.setCapability("platform", platform);
+        capabilities.setCapability("browserName", browserName);
+        capabilities.setCapability("version", browserVersion);
+        capabilities.setCapability("platform", platform);
 
         // Create a new instance of the EdgeDriver
         // FirefoxOptions options = new FirefoxOptions();
@@ -39,18 +40,18 @@ public class BaseTest {
         }
     }
 
-    // @DataProvider(name = "Set_Environment", parallel = true)
-    // public Object[][] getData() {
+    @DataProvider(name = "Set_Environment", parallel = true)
+    public Object[][] getData() {
 
-    // Object[][] Browser_Property = new Object[][] {
+    Object[][] Browser_Property = new Object[][] {
 
-    // { Platform.WIN10, "chrome", "latest" },
-    // { Platform.WIN10, "firefox", "latest" },
-    // { Platform.MAC, "safari", "latest" }
-    // };
-    // return Browser_Property;
+   // { Platform.WIN10, "chrome", "latest" },
+    //{ Platform.WIN10, "firefox", "latest" },
+    { Platform.MAC, "safari", "latest" }
+    };
+    return Browser_Property;
 
-    // }
+    }
 
     @AfterTest
     public void tearDown() throws InterruptedException {
