@@ -15,10 +15,10 @@ platforms:
     osVersion: 10
     browserName: Firefox
     browserVersion: latest
-  - os: OS X
-    osVersion: Ventura
-    browserName: Safari
-    browserVersion: 16.0
+  - os: Windows
+    osVersion: 10
+    browserName: Edge
+    browserVersion: latest
 
 parallelsPerPlatform: 1  # <integer> (Default: 1)
 
