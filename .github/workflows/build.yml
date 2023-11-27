@@ -24,7 +24,11 @@ jobs:
     #   uses: browser-actions/setup-chrome@latest
     # - run: chrome --version
 
-   
+    - name: 'BrowserStack Env Setup'
+      uses: 'browserstack/github-actions/setup-env@main'
+      with:
+        username:  ${{ secrets.BROWSERSTACK_USERNAME }}
+        access-key: ${{ secrets.BROWSERSTACK_ACCESSKEY }}
      
     - name: Build with Maven
       env:
