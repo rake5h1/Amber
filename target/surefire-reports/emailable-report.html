@@ -8,16 +8,26 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite1</th></tr>
-<tr><td><a href="#t0">Test1</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">0</td><td class="num">3,702</td><td></td><td></td></tr>
+<tr><th colspan="8">Parallel Suite</th></tr>
+<tr><td><a href="#t0">Test1-2</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">0</td><td class="num">48,677</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Test1-0</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">62,983</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Test1-1</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">88,024</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">4</th><th class="num attn">2</th><th class="num">0</th><th class="num">0</th><th class="num">199,684</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test1 &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.example.SeleniumTest</td><td><a href="#m0">setUp</a></td><td rowspan="1">1701064845146</td><td rowspan="1">1798</td></tr><tr class="failedodd"><td rowspan="1">com.example.SeleniumTest2</td><td><a href="#m1">setUp</a></td><td rowspan="1">1701064846956</td><td rowspan="1">1871</td></tr><tr><th colspan="4">Test1 &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.example.SeleniumTest</td><td><a href="#m2">tearDown</a></td><td rowspan="1">1701064846953</td><td rowspan="1">-1701064846953</td></tr><tr class="skippedodd"><td rowspan="1">com.example.SeleniumTest2</td><td><a href="#m3">tearDown</a></td><td rowspan="1">1701064848829</td><td rowspan="1">-1701064848829</td></tr><tr><th colspan="4">Test1 &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.example.SeleniumTest</td><td><a href="#m4">testGoogleSearch</a></td><td rowspan="1">1701064846952</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">com.example.SeleniumTest2</td><td><a href="#m5">testGoogleSearch2</a></td><td rowspan="1">1701064848828</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Parallel Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test1-2 &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.example.SeleniumTest</td><td><a href="#m0">setUp</a></td><td rowspan="1">1701095576260</td><td rowspan="1">25162</td></tr><tr class="failedodd"><td rowspan="1">com.example.SeleniumTest2</td><td><a href="#m1">setUp</a></td><td rowspan="1">1701095601593</td><td rowspan="1">23155</td></tr><tr><th colspan="4">Test1-2 &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.example.SeleniumTest</td><td><a href="#m2">testGoogleSearch</a></td><td rowspan="1">1701095601427</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">com.example.SeleniumTest2</td><td><a href="#m3">testGoogleSearch2</a></td><td rowspan="1">1701095624751</td><td rowspan="1">0</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Test1-0 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.example.SeleniumTest</td><td><a href="#m4">testGoogleSearch</a></td><td rowspan="1">1701095582720</td><td rowspan="1">13660</td></tr><tr class="passedodd"><td rowspan="1">com.example.SeleniumTest2</td><td><a href="#m5">testGoogleSearch2</a></td><td rowspan="1">1701095605994</td><td rowspan="1">29186</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Test1-1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.example.SeleniumTest</td><td><a href="#m6">testGoogleSearch</a></td><td rowspan="1">1701095592181</td><td rowspan="1">15504</td></tr><tr class="passedodd"><td rowspan="1">com.example.SeleniumTest2</td><td><a href="#m7">testGoogleSearch2</a></td><td rowspan="1">1701095629005</td><td rowspan="1">31338</td></tr></tbody>
 </table>
-<h2>Test1</h2><h3 id="m0">com.example.SeleniumTest#setUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Invalid username or password (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 1.50 seconds
+<h2>Test1-2</h2><h3 id="m0">com.example.SeleniumTest#setUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Could not start Browser / Emulator
+ Reason: 
+Unable to create new remote session. desired capabilities = Capabilities {browserName: safari, moz:firefoxOptions: {args: [], prefs: {}}}
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
+System info: host: &apos;mac-46-37-97-4.browserstack.com&apos;, ip: &apos;fe80:0:0:0:c6d:a736:d49b:8d10%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.0&apos;, java.version: &apos;11.0.13&apos;
+Driver info: driver.version: unknown (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24.76 seconds
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;RAKESH-ACER&apos;, ip: &apos;192.168.151.120&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.19&apos;
-Driver info: driver.version: RemoteWebDriver
+Driver info: driver.version: FirefoxDriver
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)
@@ -38,15 +48,24 @@ Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
 	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
-	at com.tests.BaseTest.setUp(BaseTest.java:35)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at com.tests.BaseTest.setUp(BaseTest.java:34)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.example.SeleniumTest2#setUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Invalid username or password (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 1.87 seconds
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.example.SeleniumTest2#setUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Could not start Browser / Emulator
+ Reason: 
+Unable to create new remote session. desired capabilities = Capabilities {browserName: safari, moz:firefoxOptions: {args: [], prefs: {}}}
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
+System info: host: &apos;mac-46-37-97-22.browserstack.com&apos;, ip: &apos;fe80:0:0:0:1c6e:64a1:543c:c08c%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.0&apos;, java.version: &apos;11.0.13&apos;
+Driver info: driver.version: unknown (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 23.11 seconds
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;RAKESH-ACER&apos;, ip: &apos;192.168.151.120&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.19&apos;
-Driver info: driver.version: RemoteWebDriver
+Driver info: driver.version: FirefoxDriver
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)
@@ -67,17 +86,24 @@ Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
 	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
-	at com.tests.BaseTest.setUp(BaseTest.java:35)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at com.tests.BaseTest.setUp(BaseTest.java:34)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.example.SeleniumTest#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.example.SeleniumTest2#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.example.SeleniumTest#testGoogleSearch</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Invalid username or password (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 1.50 seconds
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.example.SeleniumTest#testGoogleSearch</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Could not start Browser / Emulator
+ Reason: 
+Unable to create new remote session. desired capabilities = Capabilities {browserName: safari, moz:firefoxOptions: {args: [], prefs: {}}}
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
+System info: host: &apos;mac-46-37-97-4.browserstack.com&apos;, ip: &apos;fe80:0:0:0:c6d:a736:d49b:8d10%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.0&apos;, java.version: &apos;11.0.13&apos;
+Driver info: driver.version: unknown (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24.76 seconds
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;RAKESH-ACER&apos;, ip: &apos;192.168.151.120&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.19&apos;
-Driver info: driver.version: RemoteWebDriver
+Driver info: driver.version: FirefoxDriver
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)
@@ -98,15 +124,24 @@ Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
 	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
-	at com.tests.BaseTest.setUp(BaseTest.java:35)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at com.tests.BaseTest.setUp(BaseTest.java:34)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.example.SeleniumTest2#testGoogleSearch2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Invalid username or password (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 1.87 seconds
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.example.SeleniumTest2#testGoogleSearch2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Could not start Browser / Emulator
+ Reason: 
+Unable to create new remote session. desired capabilities = Capabilities {browserName: safari, moz:firefoxOptions: {args: [], prefs: {}}}
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
+System info: host: &apos;mac-46-37-97-22.browserstack.com&apos;, ip: &apos;fe80:0:0:0:1c6e:64a1:543c:c08c%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;14.0&apos;, java.version: &apos;11.0.13&apos;
+Driver info: driver.version: unknown (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 23.11 seconds
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;RAKESH-ACER&apos;, ip: &apos;192.168.151.120&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.19&apos;
-Driver info: driver.version: RemoteWebDriver
+Driver info: driver.version: FirefoxDriver
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
 	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)
@@ -127,9 +162,17 @@ Driver info: driver.version: RemoteWebDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
 	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
-	at com.tests.BaseTest.setUp(BaseTest.java:35)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:147)
+	at com.tests.BaseTest.setUp(BaseTest.java:34)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 39 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test1-0</h2><h3 id="m4">com.example.SeleniumTest#testGoogleSearch</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Browser Opened and navigated to https://google.com</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.example.SeleniumTest2#testGoogleSearch2</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Browser Opened and navigated to https://google.com<br/>Browser Opened and navigated to https://google.com</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test1-1</h2><h3 id="m6">com.example.SeleniumTest#testGoogleSearch</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Browser Opened and navigated to https://google.com</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.example.SeleniumTest2#testGoogleSearch2</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Browser Opened and navigated to https://google.com<br/>Browser Opened and navigated to https://google.com</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

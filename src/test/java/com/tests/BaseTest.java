@@ -13,33 +13,34 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 public class BaseTest {
 
     protected WebDriver driver;
-    protected RemoteWebDriver remoteWebDriver;
-    String username = System.getenv("USERNAME");
-    String accesskey = System.getenv("ACCESS_KEY");
-    String gridURL = "@hub.lambdatest.com/wd/hub";
-    String browserstackgridurl = "@hub-cloud.browserstack.com/wd/hub";
+    // protected RemoteWebDriver remoteWebDriver;
+    // String username = System.getenv("USERNAME");
+    // String accesskey = System.getenv("ACCESS_KEY");
+    // String gridURL = "@hub.lambdatest.com/wd/hub";
+    // String browserstackgridurl = "@hub-cloud.browserstack.com/wd/hub";
 
-    @BeforeTest()
+    @BeforeMethod(alwaysRun = true)
     public void setUp() {
 
-        DesiredCapabilities capabilities = new DesiredCapabilities();
+        //DesiredCapabilities capabilities = new DesiredCapabilities();
         // capabilities.setCapability("browserName", browserName);
         // capabilities.setCapability("version", browserVersion);
         // capabilities.setCapability("platform", platform);
 
-        // Create a new instance of the EdgeDriver
-        // FirefoxOptions options = new FirefoxOptions();
-        // options.addArguments("");
-        // driver = new FirefoxDriver(options);
-        try {
-            driver = new RemoteWebDriver(
-                    new java.net.URL("https://" + username + ":" + accesskey + browserstackgridurl), capabilities);
-        } catch (java.net.MalformedURLException e) {
-            System.out.println("Invalid grid URL");
-        }
+        //Create a new instance of the EdgeDriver
+        FirefoxOptions options = new FirefoxOptions();
+        //options.addArguments("--headless");
+        //options.addArguments("start-maximized");
+        driver = new FirefoxDriver(options);
+        // try {
+        //     driver = new RemoteWebDriver(
+        //             new java.net.URL("https://" + username + ":" + accesskey + browserstackgridurl), capabilities);
+        // } catch (java.net.MalformedURLException e) {
+        //     System.out.println("Invalid grid URL");
+        // }
     }
 
-    @AfterTest()
+    @AfterMethod(alwaysRun = true)
     public void tearDown() throws InterruptedException {
         // Close the browser
         if (driver != null) {

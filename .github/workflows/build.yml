@@ -24,14 +24,13 @@ jobs:
     #   uses: browser-actions/setup-chrome@latest
     # - run: chrome --version
 
-    - name: Copy browserstack.yml
-      run: cp .github/browserstack.yml .
+   
      
     - name: Build with Maven
       env:
         USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
         ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESSKEY }}
-      run: mvn -B clean test -Dbrowserstack.configFile=browserstack.yml
+      run: mvn -B clean test
 
     - name: Archive artifacts
       uses: actions/upload-artifact@v2

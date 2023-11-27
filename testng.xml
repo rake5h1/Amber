@@ -3,10 +3,6 @@
     <test name="Test1">
         <classes>
             <class name="com.example.SeleniumTest" />
-        </classes>
-    </test>
-    <test name="Test2">
-        <classes>
             <class name="com.example.SeleniumTest2" />
         </classes>
     </test>
