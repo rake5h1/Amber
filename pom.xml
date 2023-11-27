@@ -59,6 +59,9 @@
                             <mainClass>com.example.SeleniumTest</mainClass>                            <!-- Replace with your main class -->
                         </manifest>
                     </archive>
+                    <systemPropertyVariables>
+                        <browserstack.configFile>browserstack.yml</browserstack.configFile>
+                    </systemPropertyVariables>
                 </configuration>
             </plugin>
 
