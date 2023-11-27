@@ -1,3 +1,4 @@
+idleTimeout: 300
 capabilities:
   # - device: iPhone 12 Pro
   #   os_version: 14
