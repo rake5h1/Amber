@@ -1,6 +1,8 @@
 package com.tests;
 
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -17,7 +19,7 @@ public class BaseTest {
     String gridURL = "@hub.lambdatest.com/wd/hub";
     String browserstackgridurl = "@hub-cloud.browserstack.com/wd/hub";
 
-    @BeforeTest()
+    @BeforeMethod()
     public void setUp() {
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -27,7 +29,7 @@ public class BaseTest {
 
         // Create a new instance of the EdgeDriver
         // FirefoxOptions options = new FirefoxOptions();
-        // options.addArguments("--headless");
+        // options.addArguments("");
         // driver = new FirefoxDriver(options);
         try {
             driver = new RemoteWebDriver(
@@ -37,8 +39,7 @@ public class BaseTest {
         }
     }
 
-
-    @AfterTest
+    @AfterMethod()
     public void tearDown() throws InterruptedException {
         // Close the browser
         if (driver != null) {

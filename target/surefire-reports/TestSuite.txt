@@ -1,28 +1,20 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 10.086 s <<< FAILURE! - in TestSuite
-setUp(com.example.SeleniumTest)  Time elapsed: 2.448 s  <<< FAILURE!
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 4, Time elapsed: 4.415 s <<< FAILURE! - in TestSuite
+setUp(com.example.SeleniumTest)  Time elapsed: 2.436 s  <<< FAILURE!
 org.openqa.selenium.WebDriverException: 
 Invalid username or password (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 2.21 seconds
+Command duration or timeout: 1.50 seconds
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'RAKESH-ACER', ip: '192.168.151.120', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
 Driver info: driver.version: RemoteWebDriver
 
-testGoogleSearch(com.example.SeleniumTest)  Time elapsed: 0.002 s  <<< FAILURE!
-java.lang.NullPointerException
-	at com.example.SeleniumTest.testGoogleSearch(SeleniumTest.java:14)
-
-setUp(com.example.SeleniumTest2)  Time elapsed: 1.968 s  <<< FAILURE!
+setUp(com.example.SeleniumTest2)  Time elapsed: 1.876 s  <<< FAILURE!
 org.openqa.selenium.WebDriverException: 
 Invalid username or password (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 1.96 seconds
+Command duration or timeout: 1.87 seconds
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'RAKESH-ACER', ip: '192.168.151.120', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
 Driver info: driver.version: RemoteWebDriver
-
-testGoogleSearch2(com.example.SeleniumTest2)  Time elapsed: 0 s  <<< FAILURE!
-java.lang.NullPointerException
-	at com.example.SeleniumTest2.testGoogleSearch2(SeleniumTest2.java:14)
 

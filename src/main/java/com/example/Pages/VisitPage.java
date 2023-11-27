@@ -17,9 +17,10 @@ public class VisitPage {
     // Common methods shared across pages
 
     public void navigateTo(String url) throws InterruptedException {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
         driver.get(url);
         driver.manage().window().maximize();
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+
         try {
             wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[text()='Accept all']"))).click();
         } catch (Exception e) {
