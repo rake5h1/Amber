@@ -1,6 +1,5 @@
-userName: rakeshkapgate_vpzcH2
-accessKey: hLRNZskJMzx3JwgXpzdZ
-
+userName: {{secrets.BROWSERSTACK_USERNAME}}
+accessKey: {{secrets.BROWSERSTACK_ACCESSKEY}}
 projectName: Maven Selenium
 buildName: My Build
 framework: testng
