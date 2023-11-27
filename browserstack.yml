@@ -1,5 +1,5 @@
-userName: {{secrets.BROWSERSTACK_USERNAME}}
-accessKey: {{secrets.BROWSERSTACK_ACCESSKEY}}
+userName: {{env.BROWSERSTACK_USERNAME}}
+accessKey: {{env.BROWSERSTACK_ACCESSKEY}}
 projectName: Maven Selenium
 buildName: My Build
 framework: testng
