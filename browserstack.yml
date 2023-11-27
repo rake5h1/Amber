@@ -16,9 +16,9 @@ platforms:
     browserName: Firefox
     browserVersion: latest
   - os: OS X
-    osVersion: Sonoma
+    osVersion: Ventura
     browserName: Safari
-    browserVersion: 17.0
+    browserVersion: 16.0
 
 parallelsPerPlatform: 1  # <integer> (Default: 1)
 
