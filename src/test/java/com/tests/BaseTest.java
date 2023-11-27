@@ -17,14 +17,15 @@ public class BaseTest {
     String username = System.getenv("USERNAME");
     String accesskey = System.getenv("ACCESS_KEY");
     String gridURL = "@hub.lambdatest.com/wd/hub";
+    String browserstackgridurl = "@hub-cloud.browserstack.com/wd/hub";
 
-    @Test(dataProvider = "Set_Environment")
-    public void setUp(Platform platform, String browserName, String browserVersion) {
+    @Test()
+    public void setUp() {
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("browserName", browserName);
-        capabilities.setCapability("version", browserVersion);
-        capabilities.setCapability("platform", platform);
+        // capabilities.setCapability("browserName", browserName);
+        // capabilities.setCapability("version", browserVersion);
+        // capabilities.setCapability("platform", platform);
 
         // Create a new instance of the EdgeDriver
         // FirefoxOptions options = new FirefoxOptions();
@@ -32,24 +33,24 @@ public class BaseTest {
         // driver = new FirefoxDriver(options);
         try {
             driver = new RemoteWebDriver(
-                    new java.net.URL("https://" + username + ":" + accesskey + gridURL), capabilities);
+                    new java.net.URL("https://" + username + ":" + accesskey + browserstackgridurl), capabilities);
         } catch (java.net.MalformedURLException e) {
             System.out.println("Invalid grid URL");
         }
     }
 
-    @DataProvider(name = "Set_Environment", parallel = true)
-    public Object[][] getData() {
+    // @DataProvider(name = "Set_Environment", parallel = true)
+    // public Object[][] getData() {
 
-        Object[][] Browser_Property = new Object[][] {
+    // Object[][] Browser_Property = new Object[][] {
 
-                { Platform.WIN10, "chrome", "latest" },
-                { Platform.WIN10, "firefox", "latest" },
-                { Platform.MAC, "safari", "latest" }
-        };
-        return Browser_Property;
+    // { Platform.WIN10, "chrome", "latest" },
+    // { Platform.WIN10, "firefox", "latest" },
+    // { Platform.MAC, "safari", "latest" }
+    // };
+    // return Browser_Property;
 
-    }
+    // }
 
     @AfterTest
     public void tearDown() throws InterruptedException {
