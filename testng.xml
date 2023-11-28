@@ -2,8 +2,8 @@
 <suite name="Parallel Suite" parallel="tests" thread-count="2">
     <test name="Test1">
         <classes>
-            <class name="com.example.SeleniumTest" />
-            <class name="com.example.SeleniumTest2" />
+            <class name="SeleniumTest" />
+            <class name="SeleniumTest2" />
         </classes>
     </test>
 </suite>
