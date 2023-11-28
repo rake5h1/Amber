@@ -1,10 +1,11 @@
-package com.example;
+
 
 import org.testng.annotations.Test;
 
-import com.example.Pages.Search;
-import com.example.Pages.VisitPage;
 import com.tests.BaseTest;
+
+import Pages.Search;
+import Pages.VisitPage;
 
 public class SeleniumTest2 extends BaseTest {
 

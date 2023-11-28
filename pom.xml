@@ -43,6 +43,13 @@
             <artifactId>browserstack-java-sdk</artifactId>
             <version>1.12.1</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>7.14.1</version>
+        </dependency>
+
 
 
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -55,7 +62,7 @@
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>3.2.0</version>
                 <!-- <configuration> -->
-                    <!-- <archive>
+                <!-- <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
@@ -65,7 +72,7 @@
                     <systemPropertyVariables>
                         <browserstack.configFile>browserstack.yml</browserstack.configFile>
                     </systemPropertyVariables> -->
-                    <!-- <suiteXmlFiles>
+                <!-- <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <argLine>
