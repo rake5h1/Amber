@@ -39,3 +39,18 @@
 
 20:04:25.523 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/d656f1cae17c6577d5ea325daad6c1e0af55ad7a
 20:04:25.523 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+14:39:59.497 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+14:39:59.511 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+14:39:59.666 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : W:\selenium_with_java\selenium\browserstack.yml
+14:39:59.707 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+14:40:00.040 [main] ERROR c.browserstack.BrowserStackJavaAgent - Something went wrong - com.browserstack.utils.BrowserStackSDKException: Empty userName or accessKey
+	at com.browserstack.BrowserStackJavaAgent.b(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.a(Unknown Source)
+	at com.browserstack.BrowserStackJavaAgent.premain(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndStartAgent(InstrumentationImpl.java:513)
+	at java.instrument/sun.instrument.InstrumentationImpl.loadClassAndCallPremain(InstrumentationImpl.java:525)
+

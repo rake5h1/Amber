@@ -1,3 +1,4 @@
-com\example\SeleniumTest.class
-com\tests\BaseTest.class
-com\example\SeleniumTest2.class
+selenium\stepDefinitions\SeleniumTest2.class
+selenium\BaseTest.class
+CucumberRunner.class
+selenium\stepDefinitions\SeleniumTest.class

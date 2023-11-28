@@ -1,9 +1,11 @@
+package selenium.stepDefinitions;
 
 
 import org.testng.annotations.Test;
 
 import Pages.Search;
 import Pages.VisitPage;
+import selenium.BaseTest;
 
 public class SeleniumTest2 extends BaseTest {
 
