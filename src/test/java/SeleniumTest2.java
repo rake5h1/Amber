@@ -2,8 +2,6 @@
 
 import org.testng.annotations.Test;
 
-import com.tests.BaseTest;
-
 import Pages.Search;
 import Pages.VisitPage;
 
