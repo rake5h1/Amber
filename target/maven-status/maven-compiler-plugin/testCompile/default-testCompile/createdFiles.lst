@@ -1,4 +1,2 @@
-selenium\stepDefinitions\SeleniumTest2.class
-selenium\BaseTest.class
-CucumberRunner.class
-selenium\stepDefinitions\SeleniumTest.class
+runner\Runner.class
+stepDefinition\SeleniumTest.class

@@ -2,8 +2,8 @@
 <suite name="Parallel Suite" parallel="tests" thread-count="2">
     <test name="Test1">
         <classes>
-            <class name="selenium.stepDefinitions.SeleniumTest" />
-            <class name="selenium.stepDefinitions.SeleniumTest2" />
+            <class name="runner.Runner" />
+            <!-- <class name="selenium.stepDefinitions.SeleniumTest2" /> -->
         </classes>
     </test>
 </suite>
