@@ -3,7 +3,6 @@
     <test name="Test1">
         <classes>
             <class name="runner.Runner" />
-            <!-- <class name="selenium.stepDefinitions.SeleniumTest2" /> -->
         </classes>
     </test>
 </suite>

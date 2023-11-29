@@ -24,7 +24,7 @@ public class SeleniumTest {
 
         // Create a new instance of the EdgeDriver
         FirefoxOptions options = new FirefoxOptions();
-        options.addArguments("web/webdriver.gecko.driver", "path/to/geckodriver");
+        options.addArguments("webdriver.gecko.driver", "path/to/geckodriver");
         driver = new FirefoxDriver(options);
 
     }
