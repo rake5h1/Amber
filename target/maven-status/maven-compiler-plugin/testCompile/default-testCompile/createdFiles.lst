@@ -1,2 +1,5 @@
 runner\Runner.class
-stepDefinition\SeleniumTest.class
+stepDefinition\Second.class
+stepDefinition\Third.class
+setup\BaseTest.class
+stepDefinition\First.class

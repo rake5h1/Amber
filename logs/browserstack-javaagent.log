@@ -1,0 +1,33 @@
+11:54:53.351 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+11:54:53.354 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+11:54:53.511 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : C:\Users\Rakesh\Desktop\Amber\Amber\browserstack.yml
+11:54:53.559 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+11:54:53.840 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+11:55:05.776 [Test1-1@1] ERROR c.b.DriverServiceTransformer - [source error] newPageImpl() not found in com.microsoft.playwright.impl.BrowserContextImpl
+11:55:05.824 [Test1-2@2] ERROR c.b.DriverServiceTransformer - [source error] no such field: wsEndpoint
+11:56:57.936 [Thread-0] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/f8f7gdb8uikp4yipr7qttajmeoaetdwbne4k0ove to view build report, insights, and many more debugging information all at one place!
+
+11:56:58.396 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/bf69d01e7c82589722861f7649635e1da504c2c8
+11:56:58.396 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+12:00:46.900 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+12:00:46.902 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+12:00:47.054 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : C:\Users\Rakesh\Desktop\Amber\Amber\browserstack.yml
+12:00:47.099 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+12:00:47.381 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+12:00:54.183 [Test1-1@1] ERROR c.b.DriverServiceTransformer - [source error] newPageImpl() not found in com.microsoft.playwright.impl.BrowserContextImpl
+12:00:54.229 [Test1-1@1] ERROR c.b.DriverServiceTransformer - [source error] no such field: wsEndpoint
+12:03:19.163 [Thread-0] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/vbx7nrk37denknjbd6cjyqrkw6bgh68mel15p5ed to view build report, insights, and many more debugging information all at one place!
+
+12:03:19.677 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/ae5eee46211fef47483c7ded89d252d644df6d86
+12:03:19.678 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+12:07:55.095 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 3.141.59
+12:07:55.099 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 
+12:07:55.325 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : C:\Users\Rakesh\Desktop\Amber\Amber\browserstack.yml
+12:07:55.387 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+12:07:55.705 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+12:08:02.449 [Test1-2@2] ERROR c.b.DriverServiceTransformer - [source error] newPageImpl() not found in com.microsoft.playwright.impl.BrowserContextImpl
+12:08:02.485 [Test1-2@2] ERROR c.b.DriverServiceTransformer - [source error] no such field: wsEndpoint
+12:09:58.974 [Thread-0] INFO  c.browserstack.utils.LogReportingAPI - Visit https://observability.browserstack.com/builds/qwucdz64agpi0vyvibxwebiwx5ithxyyzxwjggbi to view build report, insights, and many more debugging information all at one place!
+
+12:09:59.538 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: https://automate.browserstack.com/dashboard/v2/builds/4152c2c965558e06ba7d7d99d8e5e7747ced2c27
+12:09:59.538 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO

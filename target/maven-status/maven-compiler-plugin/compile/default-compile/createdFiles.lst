@@ -1,4 +1,6 @@
+Pages\Login.class
 Pages\Handlealert.class
 Pages\Search.class
 Pages\VisitPage.class
+Pages\BonusTask.class
 Pages\Filter.class

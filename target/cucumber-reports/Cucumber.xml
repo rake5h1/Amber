@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<testsuite name="Cucumber" time="30.139" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Visit Website" name="Visit Amber" time="30.011">
+<testsuite name="Cucumber" time="36.589" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="First Task" name="Visit Amber and Filter" time="36.446">
 <system-out><![CDATA[
 Given Visit Amber Home Page.................................................passed
 When Search for accommodation in London.....................................passed

@@ -1,8 +1,6 @@
-Feature: Visit Website
+Feature: First Task
 
-
-
-   Scenario: Visit Amber
+   Scenario: Visit Amber and Filter
         Given Visit Amber Home Page
         When Search for accommodation in London
         Then Filter search results for Room Type Private Room and Sharing Private Bathroom

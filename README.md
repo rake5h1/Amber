@@ -104,6 +104,22 @@ mvn clean install
 
 ```
 
+### Reports
+
+Cucumber Reports are located at 
+
+```
+/target/cucumber-reports
+
+```
+
+TestNg Reports are located at
+
+```
+/target/surefire-reports/index.html
+
+```
+
 
 
 
