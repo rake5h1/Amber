@@ -15,7 +15,7 @@ public class BaseTest {
         if (driver == null) {
             FirefoxOptions options = new FirefoxOptions();
             System.setProperty("webdriver.gecko.driver", "src/test/resources/geckodriver.exe");
-            //options.addArguments("--headless");
+            options.addArguments("--headless");
 
             driver = new FirefoxDriver(options);
         }
