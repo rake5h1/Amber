@@ -93,8 +93,7 @@ FirefoxOptions options = new FirefoxOptions();
 Pass on GeckoDriver Path in
 
 ```
-/src/test/java/stepDefiniton/SeleniumTest.java
-
+src\test\java\setup\BaseTest.java
 ```
 
 ### Run
@@ -123,15 +122,3 @@ TestNg Reports are located at
 
 
 
-
-
-
-
-## Reports
-
-Cucumber Reports are generated at
-
-```
-/target/cucumber-reports/
-
-```
