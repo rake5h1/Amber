@@ -21,17 +21,17 @@ public class First {
     Filter filtersearch;
     VisitPage visit;
 
-    @Before()
-    public void setUp() {
-        // Create a new instance of the Firefox driver
+    // @Before()
+    // public void setUp() {
+    //     // Create a new instance of the Firefox driver
 
-        base = new BaseTest(driver);
-        driver = base.envSetup();
-        search = new Search(driver);
-        filtersearch = new Filter(driver);
-        visit = new VisitPage(driver);
+    //     base = new BaseTest(driver);
+    //     driver = base.envSetup();
+    //     search = new Search(driver);
+    //     filtersearch = new Filter(driver);
+    //     visit = new VisitPage(driver);
 
-    }
+    // }
 
     @Given("Visit Amber Home Page")
     public void visit() throws InterruptedException {
