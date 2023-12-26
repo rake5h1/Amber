@@ -19,21 +19,22 @@ public class BaseTest {
     @BeforeTest()
     public WebDriver envSetup() {
         if (driver == null) {
-            ChromeOptions options = new ChromeOptions();
-            // System.setProperty("webdriver.gecko.driver",
-            // "src/test/resources/geckodriver.exe");
+            FirefoxOptions options = new FirefoxOptions();
+            System.setProperty("webdriver.gecko.driver",
+                    "src/test/resources/geckodriver.exe");
             // System.setProperty("os.name", "Linux");
 
-            // options.addArguments("--headless");
+            options.addArguments("--headless");
             // options.setCapability("browserVersion", "120");
             // options.setCapability("platformName", "Linux");
 
-            // driver = new FirefoxDriver(options);
-            try {
-                driver = new RemoteWebDriver(new URL("http://35.175.178.108:4444/"), options);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+            driver = new FirefoxDriver(options);
+            // try {
+            // driver = new RemoteWebDriver(new URL("http://18.207.116.81:4444/wd/hub/"),
+            // options);
+            // } catch (Exception e) {
+            // e.printStackTrace();
+            // }
         }
 
         return driver;
