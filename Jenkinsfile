@@ -8,12 +8,12 @@ pipeline{
         }
         stage("Clean"){
             steps{
-            mvn clean
+            bat mvn clean
             }
         }
         stage("Test"){
             steps{
-                 mvn test
+                 bat mvn test
             }
         }
     }
